@@ -5,7 +5,16 @@ const Chapter10 = () => {
 
    a()
 
-   // funciton a() is hoisted in its context and so it function b(), but since
+   // Arrow functions do not get hoisted
+   // c()
+
+   var c = () => {
+      console.log("Arrow function c is up Man!")
+   }
+
+   c()
+
+   // funciton a() is hoisted in its context and so is function b(), but since
    // the function b() context is inside function a(), it is not available outside
    // of function a()
    function a(){
